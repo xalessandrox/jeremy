@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-body: #765432;
+  --bg-panel-right: burlywood;
+  --main-background: #B0b0A4;
+  --button-nav: #eabd84;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--main-background);
+  width: 100%;
+  height: 500px;
+}
+
+
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+

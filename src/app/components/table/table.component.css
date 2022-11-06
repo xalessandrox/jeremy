@@ -1,0 +1,74 @@
+.container {
+  background-color: var(--bg-panel-right);
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: rgba(168, 112, 56, 0.3);
+}
+
+th.mat-header-cell {
+  text-align: left;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(168, 112, 56, 0.99);
+  height: 2em;
+}
+
+.mat-cell {
+  color: #6E4529;
+  font-size: 1.1em;
+  font-family: system-ui;
+  /*font-family: "Bauhaus 93";*/
+}
+
+/*.mat-focus-indicator {*/
+/*  visibility: visible;*/
+/*  color: rgba(110,69,41,0.99);*/
+/*}*/
+
+tr.mat-row {
+  height: 3.5em;
+  line-height: 3em;
+}
+
+tr.mat-row:nth-child(even):hover .mat-cell {
+  background-color: rgba(168, 12, 56, 0.6);
+  color: rgba(0,10,70, 1);
+}
+
+tr.mat-row:nth-child(odd):hover .mat-cell {
+  /*background-color: rgba(232,172,142,0.75);*/
+  background-color: rgba(18, 12, 66, 0.6);
+  color: navajowhite;
+
+}
+
+tr.mat-row:nth-child(even) {
+  background-color: rgba(168, 112, 56, 0.4);
+}
+
+tr.mat-row:nth-child(odd) {
+  background-color: rgba(168, 112, 56, 0.5);
+}
+
+
+/*.mat-sort-header-content {*/
+/*  text-align: center;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+
+/*.mat-sort-header-container {*/
+/*}*/
+/*.mat-header-row{*/
+/*  width: fit-content !important;*/
+/*}*/
+/*.mat-row{*/
+/*  width: fit-content !important;*/
+/*}*/

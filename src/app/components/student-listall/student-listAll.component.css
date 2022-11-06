@@ -1,0 +1,18 @@
+
+/*app-table {*/
+/*  height: 100%;*/
+/*}*/
+
+#list:hover {
+  cursor: pointer;
+}
+
+
+/*:host:hover {*/
+/*  color: rgba(150, 250, 50, 100) !important;*/
+/*}*/
+
+/*:host(.active) {*/
+/*  font-weight: bold;*/
+/*  color: rgba(150, 150, 0, 100) !important;*/
+/*}*/

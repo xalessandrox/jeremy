@@ -1,0 +1,78 @@
+<div class="container" *ngIf="student">
+  <h1> Student: {{ student.firstName }} {{ student.lastName}}</h1>
+  <div class="container view-student" style="padding-top: 8px;">
+    <div class="container" style="padding-top: 8px;box-shadow: 2px 2px 10px 1px darkslategray">
+      <form #formOne="ngForm" (ngSubmit)="updateStudent(formOne)">
+        <div id="content">
+          <div class="row">
+            <div class="col-lg-2 col-xs-6">
+              <span>First name</span>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+              <input type="text" [(ngModel)]="student.firstName" name="first_name"
+                     value="{{ student.firstName}}" disabled="disabled">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-xs-6">
+              <span>Last name</span>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+              <input type="text" [(ngModel)]="student.lastName" name="last_name"
+                     value="{{ student.lastName}}" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2 col-xs-6">
+              <span>Email</span>
+            </div>
+            <div class="col-lg-10 col-xs-6">
+              <input type="text" [(ngModel)]="student.email" size="50" name="email"
+                     value="{{ student.email}}" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2 col-xs-6">
+              <span>Mobile</span>
+            </div>
+            <div class="col-lg-4 6">
+              <input type="text" [(ngModel)]="student.mobilePhone" name="mobile_phone"
+                     value="{{ student.mobilePhone}}" disabled="disabled">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-xs-6">
+              <span>Date of birth</span>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+              <input [(ngModel)]="student.dateOfBirth" matInput [matDatepicker]="picker"
+                     placeholder="{{student.dateOfBirth ? getFormattedDate(student.dateOfBirth.toString()) : 'Choose a date'}}"
+                     disabled="" name="date_of_birth">
+              <!--          <input *ngIf="!student.dateOfBirth" matInput [matDatepicker]=" picker" placeholder="Choose a date">-->
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker id="matCal" #picker [startAt]="startDate" disabled="false"></mat-datepicker>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-xs-12">
+              <span>Subject</span>
+            </div>
+            <div class="col-lg-3 col-xs-12">
+              <input type="text" [(ngModel)]="student.subjects" name="subject" value="{{ student.subjects }}"
+                     disabled="disabled">
+            </div>
+          </div>
+
+
+        </div>
+        <span [hidden]="isEditMode" class="btn-bottom"><app-button text="Edit"></app-button></span>
+        <span [hidden]="!isEditMode" class="btn-bottom"><app-button text="Save"></app-button></span>
+        <span class="btn-bottom"><app-button text="Delete"></app-button></span>
+      </form>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,15 @@
+div {
+  background-color: var(--bg-body);
+  overflow: auto;
+  border-top: transparent 5px solid;
+  border-right: navajowhite 5px ridge;
+  border-left: black 5px solid;
+}
+
+.container {
+  border: 1px solid black;
+  border-radius: 3em;
+  height: 85vh;
+  padding: 15px;
+  background-color: #B0b0A4;
+}

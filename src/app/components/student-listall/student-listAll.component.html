@@ -1,0 +1,13 @@
+<div class="container container-fluid">
+  <h1>List of your students </h1>
+  <div id="list">
+    <app-table *ngIf="students$ | async as students"
+               [tableColumns]="tableColumns"
+               [tableData]="students"
+               [rowCustom]="rowCustom">
+      <ng-template *ngFor="let student of students">
+
+      </ng-template>
+    </app-table>
+  </div>
+</div>

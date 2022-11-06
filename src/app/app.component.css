@@ -1,0 +1,28 @@
+body {
+  /*height:100vh;*/
+}
+
+h1 {
+  background-color: #8a6da8;
+  color: black;
+  text-align: center;
+}
+
+.main-container {
+  /*background-color: #aaa;*/
+  background-color: var(--main-background);
+  max-height: 100vh;
+  width: 100%;
+}
+
+div #body {
+
+}
+
+/*#panel-right {*/
+/*  max-height: 90%;*/
+/*}*/
+
+/*.row {*/
+/*  height:50%;*/
+/*}*/

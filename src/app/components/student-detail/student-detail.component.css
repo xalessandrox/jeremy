@@ -1,0 +1,47 @@
+.view-student, input  {
+  background-color: var(--bg-panel-right);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+form > div > div{
+  width: 100%;
+}
+.btn-bottom {
+  width: 45%;
+}
+.container {
+  height: 90%;
+}
+
+
+
+input {
+  border: 0;
+  font-size: 1.2em;
+}
+
+input[matInput] {
+  transform: translateY(-10px);
+}
+
+input:hover:not(input[matInput]) {
+  cursor: pointer;
+}
+
+.row  {
+  border: 3px solid beige;
+  margin-bottom: 2px;
+  height: 3.4rem;
+  border-radius: 5%;
+  background-color: rgba(150, 113, 50, 0.99);
+}
+
+label {
+  display: inline;
+}
